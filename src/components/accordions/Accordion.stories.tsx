@@ -1,6 +1,8 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 import Accordion from './Accordion';
+//############should be remove later
+import { Analytics } from '@vercel/analytics/react';
 
 const meta = {
     title: 'Forms/Accordion',
@@ -25,6 +27,7 @@ export const Default: Story = {
     },
     render: (args) => <Accordion {...args}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <Analytics />
     </Accordion>,
 }
 
